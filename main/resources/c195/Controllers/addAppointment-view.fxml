@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195.Controllers.AddAppointmentController">
+   <children>
+      <Label layoutX="205.0" layoutY="14.0" text="Add Appointment">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="300.0" layoutY="49.0" startX="-100.0" />
+      <VBox alignment="TOP_RIGHT" layoutX="14.0" layoutY="60.0" prefHeight="600.0" prefWidth="155.0">
+         <children>
+            <Label text="Appointment ID :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Title :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="77.0" text="Description :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="124.0" text="Location :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="151.0" text="Contact ID :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="178.0" text="Type :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="205.0" text="Start Date :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="232.0" text="Start Time :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="259.0" text="End Date :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="286.0" text="End Time :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="313.0" text="Customer ID :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="122.0" layoutY="340.0" text="User ID :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <VBox layoutX="196.0" layoutY="60.0" prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="apptIdTxt" disable="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="titleTxt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="descriptionTxt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="locationTxt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin></TextField>
+            <ComboBox fx:id="contNameCombo" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="14.0" />
+               </VBox.margin></ComboBox>
+            <TextField fx:id="typeTxt">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="16.0" />
+               </VBox.margin></TextField>
+            <DatePicker fx:id="startDatePicker">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></DatePicker>
+            <ChoiceBox fx:id="startTimeChoice" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin></ChoiceBox>
+            <DatePicker fx:id="endDatePicker">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></DatePicker>
+            <ChoiceBox fx:id="endTimeChoice" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin></ChoiceBox>
+            <ComboBox fx:id="custIdCombo" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></ComboBox>
+            <ComboBox fx:id="userIdCombo" prefWidth="150.0" />
+         </children></VBox>
+      <Button fx:id="addApptSaveBtn" layoutX="301.0" layoutY="660.0" mnemonicParsing="false" onAction="#OnAddApptSaveBtn" prefWidth="125.0" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="addApptCancelBtn" layoutX="461.0" layoutY="660.0" mnemonicParsing="false" onAction="#OnAddApptCancelBtn" prefWidth="125.0" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

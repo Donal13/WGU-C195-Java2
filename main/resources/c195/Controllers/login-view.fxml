@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195.Controllers.LoginController">
+   <children>
+      <TextField fx:id="UserNameTxt" layoutX="300.0" layoutY="188.0" prefHeight="25.0" prefWidth="210.0" promptText="Enter User Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="PasswordTxt" layoutX="301.0" layoutY="245.0" prefHeight="25.0" prefWidth="210.0" promptText="Enter Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="UserNameLbl" layoutX="150.0" layoutY="187.0" text="User Name :" textAlignment="RIGHT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="PasswordLbl" layoutX="163.0" layoutY="247.0" text="Password :" textAlignment="RIGHT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="LoginPleaseLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="234.0" layoutY="102.0" text="Please Login" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="LoginTitleLbl" layoutX="115.0" layoutY="41.0" prefHeight="53.0" prefWidth="390.0" text="Appointment Scheduler" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="LoginSubmitBtn" layoutX="272.0" layoutY="309.0" mnemonicParsing="false" onAction="#OnLoginSubmitBtn" prefHeight="44.0" prefWidth="125.0" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="LoginCancelBtn" layoutX="410.0" layoutY="309.0" mnemonicParsing="false" onAction="#OnLoginCancelBtn" prefHeight="44.0" prefWidth="100.0" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="60.0" layoutX="24.0" layoutY="306.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="LocationLbl" layoutX="83.0" layoutY="309.0" text="Localization" />
+      <TextField fx:id="LocationTxt" disable="true" layoutX="49.0" layoutY="331.0" promptText="Location" />
+      <Line endX="196.0" layoutX="302.0" layoutY="94.0" startX="-193.0" />
+   </children>
+</AnchorPane>

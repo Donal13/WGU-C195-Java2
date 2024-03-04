@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195.Controllers.ReportController">
+   <children>
+      <VBox layoutX="846.0" layoutY="296.0" prefHeight="190.0" prefWidth="140.0">
+         <children>
+            <Button fx:id="reportsApptsBtn" mnemonicParsing="false" onAction="#OnReportsApptsBtn" prefHeight="30.0" prefWidth="140.0" text="Appointments">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="reportsCustomersBtn" mnemonicParsing="false" onAction="#OnReportsCustomersBtn" prefHeight="30.0" prefWidth="145.0" text="Customers">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="reportsExitBtn" mnemonicParsing="false" onAction="#OnReportsExitBtn" prefHeight="30.0" prefWidth="145.0" text="Exit">
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin></Button>
+         </children></VBox>
+      <TableView fx:id="scheduleTableview" layoutX="14.0" layoutY="296.0" prefHeight="190.0" prefWidth="820.0">
+        <columns>
+          <TableColumn fx:id="apptIdScheduleColumn" prefWidth="98.0" text="Appointment ID" />
+          <TableColumn fx:id="titleScheduleColumn" prefWidth="111.0" text="Title" />
+            <TableColumn fx:id="typeScheduleColumn" minWidth="6.0" prefWidth="63.0" text="Type" />
+            <TableColumn fx:id="descriptionScheduleColumn" prefWidth="239.0" text="Description" />
+            <TableColumn fx:id="startScheduleColumn" prefWidth="106.0" text="Start" />
+            <TableColumn fx:id="endScheduleColumn" prefWidth="116.0" text="End" />
+            <TableColumn fx:id="custIdScheduleColumn" prefWidth="86.0" text="Customer ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="469.0" layoutY="14.0" text="Reports">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="divisionList" layoutX="14.0" layoutY="90.0" prefHeight="160.0" prefWidth="275.0" />
+      <Line endX="100.0" layoutX="500.0" layoutY="41.0" startX="-100.0" />
+      <ComboBox fx:id="contactCombo" layoutX="139.0" layoutY="261.0" onAction="#OnContactCombo" prefWidth="150.0" promptText="Contact ID" />
+      <Label layoutX="14.0" layoutY="265.0" text="Schedule by Contact :" />
+      <Label layoutX="14.0" layoutY="63.0" text="First Level Divisions :" />
+      <ComboBox fx:id="countryCombo" layoutX="139.0" layoutY="59.0" onAction="#OnCountryCombo" prefWidth="150.0" promptText="Country ID" />
+      <Label layoutX="357.0" layoutY="103.0" text="Login Activity Tracker" />
+      <TextArea fx:id="trackerTxtArea" layoutX="357.0" layoutY="126.0" prefHeight="160.0" prefWidth="630.0" />
+      <Label layoutX="652.0" layoutY="62.0" text=" to view total appointments by " />
+      <ComboBox fx:id="monthCombo" layoutX="500.0" layoutY="58.0" onAction="#OnMonthCombo" prefWidth="150.0" promptText="Select Month" />
+      <ComboBox fx:id="typeCombo" layoutX="818.0" layoutY="58.0" onAction="#OnTypeCombo" prefWidth="150.0" promptText="Type" />
+      <Label layoutX="681.0" layoutY="86.0" text="Total :" />
+      <Label fx:id="totalLbl" layoutX="718.0" layoutY="85.0" prefWidth="75.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

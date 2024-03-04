@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195.Controllers.AppointmentController">
+   <children>
+      <Label layoutX="350.0" layoutY="14.0" text="Appointments">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="426.0" layoutY="49.0" startX="-100.0" />
+      <VBox layoutX="846.0" layoutY="90.0" prefHeight="175.0" prefWidth="140.0">
+         <children>
+            <Button fx:id="addApptBtn" mnemonicParsing="false" onAction="#OnAddApptBtn" prefHeight="30.0" prefWidth="140.0" text="Add Appointment">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Button>
+            <Button fx:id="modApptBtn" mnemonicParsing="false" onAction="#OnModApptBtn" prefHeight="30.0" prefWidth="140.0" text="Modify Appointment">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Button>
+            <Button fx:id="delApptBtn" mnemonicParsing="false" onAction="#OnDelApptBtn" prefHeight="30.0" prefWidth="140.0" text="Delete Appointment" />
+         </children>
+      </VBox>
+      <RadioButton fx:id="allTimeRadio" layoutX="262.0" layoutY="60.0" mnemonicParsing="false" onAction="#OnAllTimeRadio" selected="true" text="All Time">
+         <toggleGroup>
+            <ToggleGroup fx:id="apptTimeToggle" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="thisMonthRadio" layoutX="374.0" layoutY="60.0" mnemonicParsing="false" onAction="#OnThisMonthRadio" text="Just This Month" toggleGroup="$apptTimeToggle" />
+      <RadioButton fx:id="thisWeekRadio" layoutX="527.0" layoutY="60.0" mnemonicParsing="false" onAction="#OnThisWeekRadio" text="Just This Week" toggleGroup="$apptTimeToggle" />
+      <TableView fx:id="appointmentTable" layoutX="14.0" layoutY="90.0" prefHeight="340.0" prefWidth="820.0">
+        <columns>
+          <TableColumn fx:id="apptIdColumn" prefWidth="55.0" text="Appt. ID" />
+          <TableColumn fx:id="titleColumn" prefWidth="100.0" text="Title" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="100.0" text="Description" />
+            <TableColumn fx:id="locationColumn" prefWidth="70.0" text="Location" />
+            <TableColumn fx:id="typeColumn" text="Type" />
+            <TableColumn fx:id="startsAtColumn" prefWidth="110.0" text="Starts At" />
+            <TableColumn fx:id="endsAtColumn" prefWidth="110.0" text="Ends At" />
+            <TableColumn fx:id="custIdColumn" text="Customer ID" />
+            <TableColumn fx:id="userIdColumn" prefWidth="50.0" text="User ID" />
+            <TableColumn fx:id="contactIdColumn" prefWidth="65.0" text="Contact ID" />
+        </columns>
+      </TableView>
+      <VBox layoutX="846.0" layoutY="311.0" prefHeight="175.0" prefWidth="140.0">
+         <children>
+            <Button fx:id="customersBtn" mnemonicParsing="false" onAction="#OnCustomersBtn" prefHeight="30.0" prefWidth="140.0" text="Customers">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="reportsBtn" mnemonicParsing="false" onAction="#OnReportsBtn" prefHeight="30.0" prefWidth="140.0" text="Reports" />
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#OnExitBtn" prefHeight="30.0" prefWidth="140.0" text="Exit">
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
